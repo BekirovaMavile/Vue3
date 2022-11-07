@@ -27,11 +27,20 @@
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="link in links" :key="link.title" :to="link.url" text
-          ><v-icon left>{{ link.icon }}</v-icon
+        <v-btn
+          v-for="link in links"
+          :key="link.title"
+          :to="link.url"
+          :prepend-icon="link.icon"
           >{{ link.title }}</v-btn
         >
       </v-toolbar-items>
+      <!-- <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn v-for="link in links" :key="link.title" :to="link.url"
+          ><v-icon left>{{ link.icon }}</v-icon
+          >{{ link.title }}</v-btn
+        >
+      </v-toolbar-items> -->
     </v-app-bar>
     <v-main>
       <v-content>
