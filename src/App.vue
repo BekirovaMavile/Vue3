@@ -43,9 +43,9 @@
       </v-toolbar-items> -->
     </v-app-bar>
     <v-main>
-      <v-content>
-        <router-view></router-view>
-      </v-content>
+      <!-- <v-content> -->
+      <router-view></router-view>
+      <!-- </v-content> -->
       <!--<router-view></router-view>-->
     </v-main>
   </v-app>

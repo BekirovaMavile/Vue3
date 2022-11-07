@@ -1,7 +1,10 @@
 <template>
   <v-container fluid fill-height>
-    <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md8>
+    <!-- <v-layout align-center justify-center> -->
+    <!-- <v-layout wrap>
+      <v-flex xs12 sm8 md8> -->
+    <v-row>
+      <v-col cols="8" offset="2">
         <v-card class="elevetion-12">
           <v-toolbar dark color="primary">
             <v-toolbar-title>Login </v-toolbar-title>
@@ -29,11 +32,15 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="primary"> Login </v-btn>
+            <v-btn color="primary" @click="onSubmit" :disabled="!valid">
+              Login
+            </v-btn>
           </v-card-actions>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
+    <!-- </v-flex>
+    </v-layout> -->
   </v-container>
 </template>
 
@@ -56,5 +63,17 @@ export default {
       ],
     };
   },
+  methods: {
+    onSubmit() {
+      if (this.$refs.form.validate()) {
+        const user = {
+          email: this.email,
+          password: this.password,
+        };
+        console.log(user);
+      }
+    },
+  },
 };
 </script>
+<style></style>
