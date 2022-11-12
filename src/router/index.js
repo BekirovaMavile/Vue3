@@ -17,6 +17,7 @@ const routes = [
 	{
 		path:"/ad/:id",
 		name:"ad",
+		name:"ad",
 		component:Ad
 	},
 	{
