@@ -10,10 +10,6 @@
   "dependencies": {
     "@mdi/font": "5.9.55",
     "core-js": "^3.8.3",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "mysql2": "^2.3.3",
-    "nodemon": "^2.0.20",
     "roboto-fontface": "*",
     "vue": "^3.2.13",
     "vue-router": "^4.1.6",
