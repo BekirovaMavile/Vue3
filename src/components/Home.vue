@@ -1,26 +1,25 @@
 <template>
   <div>
     <v-container fluid>
-      <!-- <v-layout row>
-        <v-flex xs12> -->
-      <v-row>
-        <v-col>
-          <v-carousel>
-            <v-carousel-item
-	v-for="ad in promoAds"
-	:key="ad.id"
-	:src="ad.src">
-<div class="ad-link">
-                <v-btn class="error" :to="'/ad/' + ad.id">
-                  {{ ad.title }}
-                </v-btn>
-              </div>
-            </v-carousel-item>
-          </v-carousel>
-        </v-col>
-      </v-row>
-      <!-- </v-flex>
-      </v-layout> -->
+      <v-layout row>
+        <v-row>
+          <v-col xs="12">
+            <v-carousel>
+              <v-carousel-item
+                v-for="ad in promoAds"
+                :key="ad.id"
+                :src="ad.src"
+              >
+                <div class="ad-link">
+                  <v-btn class="error" :to="'/ad/' + ad.id">
+                    {{ ad.title }}
+                  </v-btn>
+                </div>
+              </v-carousel-item>
+            </v-carousel>
+          </v-col>
+        </v-row>
+      </v-layout>
     </v-container>
     <v-container grid-list-lg>
       <v-row>
@@ -85,14 +84,14 @@ export default {
   //     ],
   //   };
   // },
-  computed:  { 
-	promoAds() {
-		return this.$store.getters.promoAds
-	},
-	ads() {
-		return this.$store.getters.ads
-	}
-}
+  computed: {
+    promoAds() {
+      return this.$store.getters.promoAds;
+    },
+    ads() {
+      return this.$store.getters.ads;
+    },
+  },
 };
 </script>
 <style scoped>

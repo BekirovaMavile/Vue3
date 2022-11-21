@@ -40,18 +40,9 @@
           >{{ link.title }}</v-btn
         >
       </v-toolbar-items>
-      <!-- <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="link in links" :key="link.title" :to="link.url"
-          ><v-icon left>{{ link.icon }}</v-icon
-          >{{ link.title }}</v-btn
-        >
-      </v-toolbar-items> -->
     </v-app-bar>
     <v-main>
-      <!-- <v-content> -->
       <router-view></router-view>
-      <!-- </v-content> -->
-      <!--<router-view></router-view>-->
     </v-main>
   </v-app>
 </template>

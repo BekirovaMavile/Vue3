@@ -1,10 +1,9 @@
 <template>
   <v-container fluid fill-height>
-    <!-- <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md8> -->
+    <v-layout align-center justify-center>
     <v-row>
-      <v-col cols="8" offset="2">
-        <v-card class="elevetion-12">
+<v-col xs="12" sm="8" offset-sm="2">
+          <v-card class="elevetion-12 mb-2">
           <v-toolbar dark color="primary">
             <v-toolbar-title>Registration</v-toolbar-title>
           </v-toolbar>
@@ -38,8 +37,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <!-- </v-flex>
-    </v-layout> -->
+    </v-layout>
   </v-container>
 </template>
 
